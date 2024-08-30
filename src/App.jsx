@@ -42,9 +42,9 @@ function App() {
           <article>
             <h2> Hola, Soy Kevin </h2>
             <p> Mucho gusto.
-              Soy desarrollador de videojuegos con experiencia en Unity, y también tengo conocimientos en desarrollo web, especialmente en el backend, aunque he trabajado un poco en frontend. Me apasiona enfrentar nuevos desafíos, ya que siempre estoy buscando maneras de aprender y crecer en mi carrera profesional.</p>
+              Soy desarrollador de videojuegos con experiencia en Unity y también tengo conocimientos en desarrollo web, especialmente en el backend, aunque he trabajado un poco en frontend. Me apasiona enfrentar nuevos desafíos, ya que siempre estoy buscando maneras de aprender y crecer en mi carrera profesional.</p>
             <h2>Tecnologias </h2>
-            <p>Aqui le dejo algunas de las tecnologias que utilizado en mi carrera</p>
+            <p>Aqui le dejo alguna de las tecnologias que e utilizado en mi carrera</p>
             <div id="tecnologias">
               <a href="https://www.aseprite.org/"><img id="aseprite" src={imagenes[9]} alt="" /></a>
               <a href="https://git-scm.com/"><img id="git" src={imagenes[10]} alt="" /></a>
@@ -69,7 +69,7 @@ function App() {
                 <p>
                   Tu viaje por el universo ha sido interrumpido por una especie
                   desconocida. Derrótalos para continuar tu travesía y descubrir
-                  quién está tratando de gobernar el universo.
+                  quién está tratando de detener tu viaje.
                 </p>
                 <img src={imagenes[5]} alt="" />
               </div>
@@ -83,7 +83,7 @@ function App() {
               <div className="cartaContenedor">
                 <h2> Climb </h2>
                 <p>
-                  Escala, resuelve los desafíos, y descubre los secretos que la
+                  Escala, resuelve los desafíos y descubre los secretos que la
                   torre guarda, pues en su interior yace la promesa de grandeza
                   destinada para ti.
                 </p>
@@ -97,8 +97,8 @@ function App() {
               <div className="cartaContenedor">
                 <h2> En la Carretera no</h2>
                 <p>
-                  Debes mantener el orden y la limpieza en la selva Misionera.
-                  ¿Vas a permitir que unos delincuentes tiren basura y se salgan
+                  Debes mantener el orden y la limpieza en la selva Misionera pero unos maleantes estan tirando basura
+                  ¿Vas a permitir que unos maleantes siguan ensuciando la hermosa selva Misionera y se salgan
                   con la suya?
                 </p>
                 <img src={imagenes[7]} alt="" />
@@ -113,7 +113,7 @@ function App() {
               <div className="cartaContenedor">
                 <h2> Star Wars Store</h2>
                 <p>
-                  Esta es la primera práctica de un e-commerce básico. Aunque la
+                  Esta es mi primera práctica simulando un e-commerce básico. Aunque la
                   página no cuenta con muchas funciones, cumple con los
                   estándares de una aplicación API RESTful.
                 </p>
@@ -167,7 +167,7 @@ function App() {
       <footer>
         <ul>
           <li>
-            <a id="Enlaces" href="">
+            <a id="Enlaces" href="https://github.com/">
               <img id="footergithub" src={imagenes[0]} alt="" />
             </a>
           </li>
@@ -177,12 +177,12 @@ function App() {
             </label>
           </li>
           <li>
-            <a id="Enlaces" href="">
+            <a id="Enlaces" href="https://www.linkedin.com/feed/">
               <img id="footerlinkedin" src={imagenes[2]} alt="" />
             </a>
           </li>
           <li>
-            <a id="Enlaces" href="">
+            <a id="Enlaces" href="https://www.instagram.com/">
               <img id="footerinstagram" src={imagenes[3]} alt="" />
             </a>
           </li>
