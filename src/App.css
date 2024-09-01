@@ -302,7 +302,7 @@
           2px -2px 0 #000,
           -2px 2px 0 #000,
           2px 2px 0 #000;
-          font-size: 30px;
+        font-size: 30px;
       }
 
       section {
@@ -415,13 +415,15 @@
           padding: 10px;
           border-radius: 0 0 20px 20px;
           font-size: 20px;
-          a{
+
+          a {
             color: black;
             text-decoration: none;
           }
-          a:hover{
+
+          a:hover {
             color: blue;
-            text-decoration: none;  
+            text-decoration: none;
           }
         }
       }
@@ -537,6 +539,11 @@
           img:hover {
             width: 100%;
             border-radius: 50%;
+          }
+
+          #footertwitch:hover {
+            border: 2px solid white;
+            background: linear-gradient(135deg, #9146FF, #6441A5);
           }
 
           #footergithub:hover {
@@ -863,7 +870,7 @@
           2px -2px 0 #000,
           -2px 2px 0 #000,
           2px 2px 0 #000;
-          font-size: 25px;
+        font-size: 25px;
       }
 
       section {
@@ -976,13 +983,15 @@
           padding: 10px;
           border-radius: 0 0 20px 20px;
           font-size: 20px;
-          a{
+
+          a {
             color: black;
             text-decoration: none;
           }
-          a:hover{
+
+          a:hover {
             color: blue;
-            text-decoration: none;  
+            text-decoration: none;
           }
         }
       }
@@ -1099,6 +1108,11 @@
             border-radius: 50%;
           }
 
+          #footertwitch:hover {
+            border: 2px solid white;
+            background: linear-gradient(135deg, #9146FF, #6441A5);
+          }
+
           #footergithub:hover {
             border: 2px solid white;
             background: linear-gradient(to bottom right,
@@ -1135,3 +1149,4 @@
     }
   }
 }
+

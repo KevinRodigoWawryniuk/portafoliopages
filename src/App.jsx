@@ -167,6 +167,11 @@ function App() {
       <footer>
         <ul>
           <li>
+            <a id="Enlaces" href="">
+              <img id="footertwitch" src={imagenes[19]} alt="" />
+            </a>
+          </li>
+          <li>
             <a id="Enlaces" href="https://github.com/">
               <img id="footergithub" src={imagenes[0]} alt="" />
             </a>

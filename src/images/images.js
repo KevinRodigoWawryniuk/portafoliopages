@@ -22,7 +22,10 @@ import unity from '../images/LogosDeTecnologias/unity.svg';
 import visual from '../images/LogosDeTecnologias/visualstudiocode.svg';
 import vite from '../images/LogosDeTecnologias/vite.svg';
 
+// [19 - ]
+import twitch from './Links/Twitch.png';
 
-var imagenes = [github, gmail, linkedin, instagram, fotoDePerfil, spaceTravel, climb, enlaCarreteraNo, statWar, asespite, git, gitHub, mysql, node, postman, react, unity, visual, vite];
+
+var imagenes = [github, gmail, linkedin, instagram, fotoDePerfil, spaceTravel, climb, enlaCarreteraNo, statWar, asespite, git, gitHub, mysql, node, postman, react, unity, visual, vite, twitch];
 
 export { imagenes };
