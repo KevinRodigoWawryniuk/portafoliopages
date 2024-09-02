@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-@media (max-width: 1440px) {
+@media (max-width:1440px) {
   header {
     font-family: PixelifySans;
     width: 100%;
@@ -1150,3 +1150,584 @@
   }
 }
 
+/* tamaño para Celular */
+@media (max-width:412px) {
+  header {
+    font-family: PixelifySans;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-shadow: -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+      font-size: 30px;
+    }
+
+    h2 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-shadow: -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+      font-size: 25px;
+    }
+
+    nav {
+      width: 70%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      label {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transition: .2s ease-in-out;
+        text-shadow: -2px -2px 0 #000,
+          2px -2px 0 #000,
+          -2px 2px 0 #000,
+          2px 2px 0 #000;
+        font-size: 20px;
+      }
+
+      label:hover {
+        border-radius: 10px 10px 0px 0px;
+        border: 1px solid white;
+        background-color: gray;
+      }
+    }
+  }
+
+  .pantallaActiva {
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid white;
+  }
+
+  @keyframes animacionPresentacion {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  main {
+    width: 100%;
+    min-height: 400px;
+    max-height: 915px;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PixelifySans;
+
+    #Presentacion, #Projectos, #Gmail {
+      display: none;
+    }
+
+    #Presentation {
+      width: 100%;
+      display: none;
+    }
+
+    #Projects {
+      width: 100%;
+      display: none;
+    }
+
+    #Presentacion:checked~#Presentation {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      animation: animacionPresentacion .3s ease forwards;
+
+      #fotoPerfil {
+        width: 30%;
+        padding: 0;
+        margin: 0 0 0 0;
+        border-radius: 50%;
+        background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 100%);
+      }
+
+      article {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+          margin: .5rem 0;
+          text-shadow: -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000;
+          font-size: 20px;
+        }
+
+        p {
+          padding: 0 1rem;
+          margin: 1rem 0;
+          text-shadow: -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000;
+          font-size: 15px;
+          text-align: justify;
+        }
+
+        #tecnologias {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          justify-items: center;
+
+          a {
+            width: 20%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+
+            img {
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              transition: .3s ease-in-out;
+            }
+
+            img:hover {
+              border-radius: 50%;
+            }
+          }
+
+          a:hover {
+            width: 10%;
+          }
+
+          #aseprite:hover {
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom right,
+                #0033cc,
+                #0066ff,
+                #3399ff);
+          }
+
+          #git:hover {
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom right,
+                #F34F29,
+                #E04E39,
+                #F6F1F1);
+          }
+
+          #github:hover {
+            width: 100%;
+            background: linear-gradient(to bottom right,
+                #24292e,
+                #333333,
+                #000000);
+          }
+
+          #mysql:hover {
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom right,
+                #004d99,
+                #0099ff,
+                #66ccff);
+          }
+
+          #node:hover {
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom right,
+                #8CC84B,
+                #4D774F,
+                #2F4F28);
+          }
+
+          #postman:hover {
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom right,
+                #FF6F61,
+                #FF8C00,
+                #FF5722);
+          }
+
+          #react:hover {
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom right,
+                #61DAFB,
+                #0E4C92,
+                #0B3D91);
+          }
+
+          #unity:hover {
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom right,
+                #000000,
+                #1C1C1C,
+                #3C3C3C);
+          }
+
+          #visual:hover {
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(to bottom right,
+                #007ACC,
+                #004C99,
+                #002E5D);
+          }
+
+          #vite:hover {
+            width: 100%;
+            border: 2px solid black;
+            background-image: linear-gradient(to top, rgba(226, 66, 249, 0.94) 10.2%, rgba(79, 147, 249, 1) 77.3%);
+          }
+
+        }
+      }
+
+
+    }
+
+    #Projectos:checked~#Projects {
+      display: block;
+      animation: animacionPresentacion .5s ease forwards;
+
+      h2 {
+        font-family: PixelifySans;
+        font-size: x-large;
+        color: white;
+        text-shadow: -2px -2px 0 #000,
+          2px -2px 0 #000,
+          -2px 2px 0 #000,
+          2px 2px 0 #000;
+        font-size: 20px;
+      }
+
+      section {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+
+        .carta {
+          width: 90%;
+          height: 300px;
+          margin: 5px;
+          border: 2px solid black;
+          border-radius: 20px;
+          flex: 50%;
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+        }
+
+        .carta .cartaContenedor:hover {
+          flex-grow: 1;
+          flex-shrink: 1;
+          display: flex;
+          flex-direction: column;
+
+          img {
+            width: 44.5%;
+            height: 28%;
+            position: absolute;
+            border-radius: 20px 20px 0 0;
+            z-index: 0;
+            opacity: .5;
+          }
+
+          h2 {
+            display: block;
+            font-family: PixelifySans;
+            font-size: 18px;
+            color: white;
+            margin: .5rem 0;
+            z-index: 1;
+            text-shadow: -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000,
+              1px 1px 0 #000;
+            opacity: 1;
+          }
+
+          p {
+            display: block;
+            font-family: PixelifySans;
+            font-size: 14px;
+            color: white;
+            margin: 0 0;
+            padding: 0 .5rem;
+            text-align: justify;
+            z-index: 1;
+            text-shadow: -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000,
+              1px 1px 0 #000;
+            opacity: 1;
+          }
+        }
+
+        .carta .cartaContenedor {
+          height: 100%;
+          width: 100%;
+          flex-grow: 1;
+          flex-shrink: 1;
+          display: flex;
+          flex-direction: column;
+
+          img {
+            width: 44.5%;
+            height: 28%;
+            object-fit: cover;
+            border-radius: 16px 16px 0 0;
+            z-index: 0;
+            opacity: 1;
+            transition: .5s;
+          }
+
+          h2 {
+            display: none;
+            font-family: PixelifySans;
+            font-size: medium;
+            color: white;
+            margin: 1.2rem 0;
+            z-index: 1;
+            text-shadow: -2px -2px 0 #000,
+              2px -2px 0 #000,
+              -2px 2px 0 #000,
+              2px 2px 0 #000;
+            opacity: 0;
+            transition: .5s;
+          }
+
+          p {
+            display: none;
+            font-family: PixelifySans;
+            font-size: small;
+            color: white;
+            margin: 1.2rem 0;
+            z-index: 1;
+            text-shadow: -2px -2px 0 #000,
+              2px -2px 0 #000,
+              -2px 2px 0 #000,
+              2px 2px 0 #000;
+            opacity: 0;
+            transition: .5s;
+          }
+        }
+
+        .carta .cartaFooter {
+          width: 89%;
+          background-color: gray;
+          padding: 10px;
+          border-radius: 0 0 20px 20px;
+          font-size: 20px;
+
+          a {
+            color: black;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: blue;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    #formEmail {
+      display: none;
+    }
+
+    #Gmail:checked~#formEmail {
+      width: 100%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      backdrop-filter: blur(10px);
+
+      form {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 255, 255, 0.397);
+        border-radius: 20px;
+
+        label {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+        }
+
+        #mail {
+          width: 100%;
+          height: 30px;
+          margin: .5rem 0;
+          padding: 0;
+          border-radius: 20px;
+          text-align: center;
+        }
+
+        #mensaje {
+          width: 100%;
+          height: 100px;
+          text-align: center;
+          border-radius: 10px;
+        }
+
+        button {
+          width: 50%;
+          height: 40px;
+          margin: .5rem 0 0 0;
+          background-color: white;
+          color: white;
+          font-size: 20px;
+          text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+          font-weight: bold;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+
+      li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #Enlaces {
+          width: 50%;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          img {
+            width: 90%;
+            margin: 0;
+            padding: 0;
+            transition: .3s ease-in-out;
+          }
+
+          img:hover {
+            width: 100%;
+            border-radius: 50%;
+          }
+
+          #footertwitch:hover {
+            border: 2px solid white;
+            background: linear-gradient(135deg, #9146FF, #6441A5);
+          }
+
+          #footergithub:hover {
+            border: 2px solid white;
+            background: linear-gradient(to bottom right,
+                #333333,
+                #24292e,
+                #000000);
+          }
+
+          #footerMail:hover {
+            border: 2px solid white;
+            background: linear-gradient(to bottom right,
+                #d93025,
+                #ea4335,
+                #fbbc05);
+          }
+
+          #footerlinkedin:hover {
+            border: 2px solid white;
+            background: linear-gradient(to bottom right,
+                #0077B5,
+                #005582,
+                #003d61);
+          }
+
+          #footerinstagram:hover {
+            border: 2px solid white;
+            background: radial-gradient(circle at 30% 107%,
+                #fdf497 0%, #fdf497 5%,
+                #fd5949 45%, #d6249f 60%,
+                #285AEB 90%);
+          }
+        }
+      }
+    }
+  }
+}
