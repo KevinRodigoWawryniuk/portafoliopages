@@ -159,7 +159,7 @@ function App() {
                 placeholder="Mensaje"
               />
             </label>
-            <button type="submit">Enviar</button>
+            <button id="botonenviar" type="submit">Enviar</button>
           </form>
         </section>
       </main>
